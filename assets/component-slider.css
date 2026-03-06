@@ -351,6 +351,8 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  background-color: #292929;
 }
 
 .slider-button:not([disabled]):hover {
@@ -364,6 +366,8 @@ slider-component.slider-component-full-width {
 .slider-button[disabled] .icon {
   color: rgba(var(--color-foreground), 0.3);
   cursor: not-allowed;
+  
+  color: white;
 }
 
 .slider-button--next .icon {
