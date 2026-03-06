@@ -366,7 +366,7 @@ slider-component.slider-component-full-width {
 
 .slider-button[disabled] {
   background-color: #696969;
-  color: red;
+  color: blue;
 }
 
 .slider-button[disabled] .icon {
