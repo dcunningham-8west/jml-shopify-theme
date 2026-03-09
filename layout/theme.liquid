@@ -41,7 +41,11 @@
 
 
     {{ 'custom.css' | asset_url | stylesheet_tag }}
-    
+
+{% comment %}     {% if template.name == 'product' %}
+      {{ 'custom_reviews.css' | asset_url | stylesheet_tag }}
+    {% endif %} {% endcomment %}
+
     {{ content_for_header }}
 
     {%- liquid
