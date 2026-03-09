@@ -90,7 +90,7 @@
             "border_color": "#108474",
             "show_drop_shadow": false,
             "transition_speed": 5,
-            "header_text": "Changed by the Admin",
+            "header_text": "Changed by the Admin <br> But this was changed by the code",
             "show_average_rating": true
           }
         }
