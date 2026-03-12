@@ -30,7 +30,7 @@ const initGSAP = () => {
       start: "top top", // Pin when the top of the section hits the top of the viewport
       end: () => '+=' + galleryTrack.scrollWidth,
       pin: true,       // This creates the "sticky" effect
-      scrub: 1.5,
+      scrub: 1.45,
       invalidateOnRefresh: true,
     },
   });
