@@ -1,0 +1,190 @@
+:root {
+  --bg: #000;
+  --accent: #00e676;
+  --card-bg: #111;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: white;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; /* Thin and elegant */
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background: #00e676; /* Your accent color */
+  transform: scaleX(0); /* Start at 0% width */
+  transform-origin: left; /* Fill from left to right */
+  will-change: transform;
+}
+
+#smooth-wrapper {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+#smooth-content {
+  width: 100%;
+}
+
+.spacer {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.label {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+/* --- 1 & 2: VIDEO HERO & SPLIT REVEAL (Combined Pin) --- */
+.master-pin-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+}
+
+.hero-copy-wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.hero-text {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0;
+}
+
+.module-split {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: #0a0a0a;
+  transform: translateY(100vh);
+  display: flex;
+}
+
+.image-panel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  will-change: width;
+}
+
+.image-panel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  background: #000;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.credits-content {
+  padding: 5vw;
+  transform: translateY(100vh);
+}
+
+/* --- 3. MOMENTUM GALLERY --- */
+.gallery-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #050505;
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  padding: 0 10vw;
+  gap: 5vw;
+}
+
+.gallery-item {
+  width: 50vh;
+  height: 60vh;
+  background: var(--card-bg);
+  border: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+/* --- 4. UNPINNED SCRUB --- */
+.unpinned-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.unpinned-track {
+  display: flex;
+  gap: 10vw;
+  transform: translateX(100vw);
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.unpinned-card {
+  width: 50vw;
+  height: 40vh;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 1px solid var(--accent);
+}/*# sourceMappingURL=scrolly-style.css.map */
