@@ -12,17 +12,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text_iVaBXW": {
+        "text_aacGzT": {
           "type": "text",
           "settings": {
-            "text": "Text block{{ product.metafields.custom.featured_ingredients.value.ingredient_name.value }}",
-            "text_style": "body"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "",
+            "text": "{{ product.metafields.custom.featured_ingredients.value.ingredient_name.value }}",
             "text_style": "body"
           }
         },
@@ -103,8 +96,7 @@
         }
       },
       "block_order": [
-        "text_iVaBXW",
-        "text",
+        "text_aacGzT",
         "title",
         "price",
         "variant_picker",
