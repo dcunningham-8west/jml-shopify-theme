@@ -12,6 +12,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "text_9L7cb7": {
+          "type": "text",
+          "source": "{{ product.metafields.custom.featured_ingredients.value }}",
+          "settings": {
+            "text": "{{ product.metafields.custom.featured_ingredients.value.ingredient_name.value }}"
+          }
+        },
         "text": {
           "type": "text",
           "settings": {
@@ -96,6 +103,7 @@
         }
       },
       "block_order": [
+        "text_9L7cb7",
         "text",
         "title",
         "price",
