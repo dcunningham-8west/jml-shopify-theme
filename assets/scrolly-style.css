@@ -31,16 +31,6 @@ body {
   will-change: transform;
 }
 
-#smooth-wrapper {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-}
-
-#smooth-content {
-  width: 100%;
-}
-
 .spacer {
   height: 60vh;
   display: flex;
@@ -142,6 +132,7 @@ video {
   align-items: center;
   background: #050505;
   overflow: hidden;
+  position: relative;
 }
 
 .gallery-track {
