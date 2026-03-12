@@ -132,7 +132,6 @@ video {
   align-items: center;
   background: #050505;
   overflow: hidden;
-  position: relative;
 }
 
 .gallery-track {
