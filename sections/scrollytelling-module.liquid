@@ -2,14 +2,33 @@
 {{ 'scrolly-script.js' | asset_url | script_tag }}
 
 <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <section class="gallery-section">
-          <div class="gallery-track">
-            <div class="gallery-item">01</div>
-            <div class="gallery-item">02</div>
-            <div class="gallery-item">03</div>
-            <div class="gallery-item">04</div>
-          </div>
-        </section>
-    </div>
+  <div id="smooth-content">
+    <section class="gallery-section">
+      <div class="gallery-track">
+        <div class="gallery-item">01</div>
+        <div class="gallery-item">02</div>
+        <div class="gallery-item">03</div>
+        <div class="gallery-item">04</div>
+      </div>
+    </section>
+  </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Scrollytelling Module",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#ffffff"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Scrollytelling Module"
+      }
+    ]
+  }
+{% endschema %}
