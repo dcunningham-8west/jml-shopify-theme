@@ -12,11 +12,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text_9L7cb7": {
+        "text_iVaBXW": {
           "type": "text",
-          "source": "{{ product.metafields.custom.featured_ingredients.value }}",
           "settings": {
-            "text": "{{ product.metafields.custom.featured_ingredients.value.ingredient_name.value }}"
+            "text": "Text block{{ product.metafields.custom.featured_ingredients.value.ingredient_name.value }}",
+            "text_style": "body"
           }
         },
         "text": {
@@ -103,7 +103,7 @@
         }
       },
       "block_order": [
-        "text_9L7cb7",
+        "text_iVaBXW",
         "text",
         "title",
         "price",
